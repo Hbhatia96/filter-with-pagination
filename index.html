@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<section class="main-filter-section">
+    <div class="container">
+
+        <h4>SpacEx Launch programs</h4>
+
+        <div class="filter-wrapper">
+            <img class='toggle-arrow'  src="https://icon-library.net/images/right-arrow-icon/right-arrow-icon-11.jpg" alt="toggle menu">
+            <form class="filter-box">
+                <h5>Filters</h5>
+                    <h6>Launch Year</h6>
+                    <div class="year-box flex-wrapper">
+                        <div class="options-wrapper">
+                            <input type="radio" data-waschecked="false" id="yr2006" name="launch_year" value="2006">
+                            <label for="yr2006">2006</label>
+                        </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2007" name="launch_year" value="2007">
+                        <label for="yr2007">2007</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2008" name="launch_year" value="2008">
+                        <label for="yr2008">2008</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2009" name="launch_year" value="2009">
+                        <label for="yr2009">2009</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2010" name="launch_year" value="2010">
+                        <label for="yr2010">2010</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2011" name="launch_year" value="2011">
+                        <label for="yr2011">2011</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2012" name="launch_year" value="2012">
+                        <label for="yr2012">2012</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2013" name="launch_year" value="2013">
+                        <label for="yr2013">2013</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2014" name="launch_year" value="2014">
+                        <label for="yr2014">2014</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2015" name="launch_year" value="2015">
+                        <label for="yr2015">2015</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2016" name="launch_year" value="2016">
+                        <label for="yr2016">2016</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2017" name="launch_year" value="2017">
+                        <label for="yr2017">2017</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2018" name="launch_year" value="2018">
+                        <label for="yr2018">2018</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2019" name="launch_year" value="2019">
+                        <label for="yr2019">2019</label>
+                    </div><div class="options-wrapper">
+                        <input type="radio" data-waschecked="false" id="yr2020" name="launch_year" value="2020">
+                        <label for="yr2020">2020</label>
+                    </div></div>
+
+                    <h6>Successful Launch</h6>
+                    <div class='launch flex-wrapper'>
+                        <div class="options-wrapper">
+                            <input data-waschecked="false" type="radio" id="launch_success_true" name="launch_success" value="true">
+                            <label for="launch_success_true">True</label>
+                        </div>
+                        <div class="options-wrapper">
+                            <input data-waschecked="false" type="radio" id="launch_success_false" name="launch_success" value="false">
+                            <label for="launch_success_false">False</label>
+                        </div>
+                    </div>
+
+                    <h6>Successful Landing</h6>
+                    <div class='land flex-wrapper'>
+                        <div class="options-wrapper">
+                            <input data-waschecked="false" type="radio" id="land_success_true" name="land_success" value="true">
+                            <label for="land_success_true">True</label>
+                        </div>
+                        <div class="options-wrapper">
+                            <input data-waschecked="false" type="radio" id="land_success_false" name="land_success" value="false">
+                            <label for="land_success_false">False</label>
+                        </div>
+                    </div>
+
+            </form>
+            <div class="card-box">
+                <div class="card-wrapper"></div>
+                <img id="loader"  src="https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" alt="loading">
+                <img id="no-data" src="https://icon-library.com/images/no-data-icon/no-data-icon-10.jpg" alt="no data">
+
+                <div class="pagination-wrapper">
+
+                    <div class="postOption">Items per page:
+                        <select>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+
+                    <span class="ul pages"></span>
+                    <a href="#" class="prev-arrow">
+                        &lt; </a>
+
+                    <a href="#" class="next-arrow">
+                        &gt;
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

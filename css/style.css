@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+section.pops {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    display: none;
+}
+section.pops .wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    max-width: 1000px;
+    background: #ffd222;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+section.pops .wrapper .form-box {
+    width: calc(60% - 20px);
+    text-align: center;
+}
+@media (max-width: 768px) {
+    section.pops .wrapper .form-box {
+        width: 100%;
+    }
+}
+section.pops .wrapper .form-box h2 {
+    display: block;
+    text-align: center;
+}
+section.pops .wrapper .form-box input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+section.pops .wrapper .form-box input[type=button] {
+    color: white;
+    background: black;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+section.pops .wrapper .form-box input[type=button].stop {
+    pointer-events: none;
+}
+section.pops .wrapper .form-box input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+section.pops .wrapper .form-box .field-wrapper {
+    text-align: left;
+}
+section.pops .wrapper .form-box .checkbox-wrapper {
+    padding: 12px 0 0 23px;
+    margin-bottom: 35px;
+    position: relative;
+}
+section.pops .wrapper .form-box .checkbox-wrapper input {
+    position: absolute;
+    left: 0;
+    margin: 4px 0;
+}
+section.pops .wrapper .form-box .checkbox-wrapper .error_wrapper {
+    left: -20px;
+}
+section.pops .wrapper .form-box .checkbox-wrapper .error_wrapper .error_msg {
+    bottom: -46px;
+}
+section.pops .wrapper .img-wrapper {
+    width: 39%;
+    text-align: center;
+}
+section.pops .wrapper .img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    section.pops .wrapper .img-wrapper {
+        display: none;
+    }
+}
+section.pops .wrapper .cross {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    font-size: 20px;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+.error_wrapper {
+    position: relative;
+}
+.error_wrapper .error_msg {
+    position: absolute;
+    background: red;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    max-width: 60%;
+    bottom: -15px;
+    left: 0;
+}
