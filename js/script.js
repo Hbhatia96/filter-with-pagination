@@ -162,7 +162,8 @@
                         }
                     })
                     .fail(function (error) {});
-            } else {
+            }
+            else {
                 var data = {};
                 $("form")
                     .serializeArray()
