@@ -1,10 +1,5 @@
 // Use $ instead of jQuery
 (function ($) {
-    // On DOM ready
-    // $(document).ready(function () {
-    //
-    //
-    // });
     $(window).on("load",function () {
 
         var filteredData = 0;
@@ -13,9 +8,8 @@
             pagecount = 1,
             PostPerPage = 8;
 
-        $(document).ready(function () {
             urlCheck();
-        });
+
 
         $(".toggle-arrow").click(function () {
             $(".filter-wrapper").toggleClass("open");
