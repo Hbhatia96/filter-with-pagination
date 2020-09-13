@@ -76,20 +76,6 @@
             }
         }
 
-        function dataGet() {
-            $.get("https://api.spaceXdata.com/v3/launches?limit=100", false, function (
-                Superdata,
-                statusTxt
-            ) {
-                if (statusTxt == "success") {
-                    // console.log(Superdata);
-                    // GlobalData = Superdata;
-                    filteredData = Superdata;
-                    urlCheck();
-                }
-            });
-        }
-
         function createCard(data, pageNo = 1) {
             if (pageNo < 1) {
                 console.log("wrong page no. given");
@@ -105,7 +91,7 @@
                     index >= (pageNo - 1) * PostPerPage &&
                     index <= pageNo * PostPerPage - 1
                 ) {
-                    // console.log(currentValue);
+                    console.log(currentValue);
                     datawrapper.append(`<div class="card">
         <img src="${currentValue.links.mission_patch_small}" alt="${currentValue.mission_name}">
           <div class="content-wrapper">
@@ -124,7 +110,7 @@
             </div>
              <div class="data-row">
               <span>Successful Landing:</span>
-              <span>${currentValue.land_success}</span>
+              <span>${currentValue.rocket.first_stage.cores[0].land_success}</span>
             </div>
           </div>
         </div>`);
